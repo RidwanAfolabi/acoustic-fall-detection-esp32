@@ -1,0 +1,34 @@
+{
+  "raw_dir": "C:\\Users\\USER\\Documents\\ESP32-S3-BOX-3-Voice-project\\acoustic-alert-system\\data\\raw",
+  "deep_scan": false,
+  "files_found": 950,
+  "files_readable": 950,
+  "files_conforming": 950,
+  "files_usable": 950,
+  "total_audio_sec": 2849.866666666667,
+  "class_file_counts": {
+    "fall": 475,
+    "non_fall": 475
+  },
+  "class_window_counts": {
+    "fall": 2374,
+    "non_fall": 2375
+  },
+  "fold_file_counts": {
+    "01": 95,
+    "02": 95,
+    "03": 95,
+    "04": 95,
+    "05": 95,
+    "06": 95,
+    "07": 95,
+    "08": 95,
+    "09": 95,
+    "10": 95
+  },
+  "total_windows": 4749,
+  "window_samples": 15600,
+  "hop_samples": 7800,
+  "sample_rate": 16000,
+  "issues": []
+}

@@ -1,0 +1,24 @@
+# Acoustic Emergency Alerting System - Phase 1 PoC
+#
+# Python 3.11 is required (TensorFlow has no cp314 wheels), and the venv must
+# live at a SHORT path: TensorFlow's bundled headers exceed the 260-char Windows
+# MAX_PATH when installed under this project directory, and LongPathsEnabled is
+# 0 on this machine. Create the environment with:
+#
+#     py -3.11 -m venv C:\aesv
+#     C:\aesv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- Steps 1-3: audit, preprocessing, splitting -----------------------------
+numpy
+pandas
+scipy
+librosa>=0.11
+soundfile>=0.12
+tqdm
+matplotlib
+
+# --- Steps 4-5: YAMNet transfer learning, evaluation, TFLite export ---------
+# Verified installed and working: TF 2.21.0 (Windows native, CPU-only).
+tensorflow>=2.21          # backbone, TFLite converter
+tensorflow-hub>=0.16      # source of the pre-trained YAMNet weights
+scikit-learn              # confusion matrix / precision / recall / F1

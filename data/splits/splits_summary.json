@@ -1,0 +1,67 @@
+{
+  "strategy": "fold",
+  "eval_variants": "canonical",
+  "folds": {
+    "train": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "10"
+    ],
+    "val": [
+      "07",
+      "08"
+    ],
+    "test": [
+      "09"
+    ]
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "clips": 665,
+      "clips_pct": 70.0,
+      "windows": 9972,
+      "windows_pct": 87.49670966043696,
+      "fall": 4962,
+      "non_fall": 5010,
+      "fall_pct": 49.75932611311673
+    },
+    "val": {
+      "split": "val",
+      "clips": 190,
+      "clips_pct": 20.0,
+      "windows": 950,
+      "windows_pct": 8.33552689304203,
+      "fall": 480,
+      "non_fall": 470,
+      "fall_pct": 50.526315789473685
+    },
+    "test": {
+      "split": "test",
+      "clips": 95,
+      "clips_pct": 10.0,
+      "windows": 475,
+      "windows_pct": 4.167763446521015,
+      "fall": 240,
+      "non_fall": 235,
+      "fall_pct": 50.526315789473685
+    }
+  },
+  "class_weights": {
+    "0": 0.9952095808383233,
+    "1": 1.0048367593712213
+  },
+  "label_to_index": {
+    "fall": 1,
+    "non_fall": 0
+  },
+  "chunks_file": "C:\\Users\\USER\\Documents\\ESP32-S3-BOX-3-Voice-project\\acoustic-alert-system\\data\\processed\\chunks_int16.npy",
+  "window_samples": 15600,
+  "sample_rate": 16000,
+  "seed": 1337,
+  "problems": []
+}

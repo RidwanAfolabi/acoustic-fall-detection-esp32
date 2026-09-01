@@ -1,0 +1,151 @@
+{
+  "tensorflow": "2.21.0",
+  "epochs_run": 21,
+  "best_val_loss": 0.47661641240119934,
+  "best_epoch": 5,
+  "hidden_units": 128,
+  "dropout": 0.4,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "seed": 1337,
+  "verification": null,
+  "results": {
+    "train": {
+      "split": "train",
+      "n": 9972,
+      "accuracy": 0.814781387886081,
+      "auc": 0.900744379841687,
+      "confusion_matrix": [
+        [
+          4132,
+          878
+        ],
+        [
+          969,
+          3993
+        ]
+      ],
+      "fall_precision": 0.8197495380825293,
+      "fall_recall": 0.8047158403869408,
+      "fall_f1": 0.8121631241737008,
+      "per_class": {
+        "non_fall": {
+          "precision": 0.8100372475985101,
+          "recall": 0.824750499001996,
+          "f1": 0.817327662941351,
+          "support": 5010
+        },
+        "fall": {
+          "precision": 0.8197495380825293,
+          "recall": 0.8047158403869408,
+          "f1": 0.8121631241737008,
+          "support": 4962
+        }
+      }
+    },
+    "val": {
+      "split": "val",
+      "n": 950,
+      "accuracy": 0.7778947368421053,
+      "auc": 0.8508998226950354,
+      "confusion_matrix": [
+        [
+          352,
+          118
+        ],
+        [
+          93,
+          387
+        ]
+      ],
+      "fall_precision": 0.7663366336633664,
+      "fall_recall": 0.80625,
+      "fall_f1": 0.7857868020304568,
+      "per_class": {
+        "non_fall": {
+          "precision": 0.7910112359550562,
+          "recall": 0.7489361702127659,
+          "f1": 0.7693989071038252,
+          "support": 470
+        },
+        "fall": {
+          "precision": 0.7663366336633664,
+          "recall": 0.80625,
+          "f1": 0.7857868020304568,
+          "support": 480
+        }
+      }
+    },
+    "test": {
+      "split": "test",
+      "n": 475,
+      "accuracy": 0.751578947368421,
+      "auc": 0.831063829787234,
+      "confusion_matrix": [
+        [
+          177,
+          58
+        ],
+        [
+          60,
+          180
+        ]
+      ],
+      "fall_precision": 0.7563025210084033,
+      "fall_recall": 0.75,
+      "fall_f1": 0.7531380753138075,
+      "per_class": {
+        "non_fall": {
+          "precision": 0.7468354430379747,
+          "recall": 0.7531914893617021,
+          "f1": 0.75,
+          "support": 235
+        },
+        "fall": {
+          "precision": 0.7563025210084033,
+          "recall": 0.75,
+          "f1": 0.7531380753138075,
+          "support": 240
+        }
+      }
+    },
+    "val/clip": {
+      "split": "val/clip",
+      "n": 190,
+      "accuracy": 0.9105263157894737,
+      "auc": 0.9608820921985816,
+      "confusion_matrix": [
+        [
+          78,
+          16
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "fall_precision": 0.8558558558558559,
+      "fall_recall": 0.9895833333333334,
+      "fall_f1": 0.9178743961352657
+    },
+    "test/clip": {
+      "split": "test/clip",
+      "n": 95,
+      "accuracy": 0.9052631578947369,
+      "auc": 0.9250886524822695,
+      "confusion_matrix": [
+        [
+          41,
+          6
+        ],
+        [
+          3,
+          45
+        ]
+      ],
+      "fall_precision": 0.8823529411764706,
+      "fall_recall": 0.9375,
+      "fall_f1": 0.9090909090909091
+    }
+  }
+}

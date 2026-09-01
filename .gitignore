@@ -1,0 +1,73 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Large Datasets and Processed Data
+# (Avoids committing gigabytes of raw/processed audio and hitting GitHub 100MB limit)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/processed_p2/*
+!data/processed_p2/.gitkeep
+data/combined/*
+!data/combined/.gitkeep
+data/splits/*.npy
+data/splits/split_manifest.csv
+!data/splits/.gitkeep
+!data/splits/splits_summary.json
+
+# External raw dataset archives and large downloads
+data/external/**/*.tar.gz
+data/external/**/*.zip
+data/external/**/*.tar
+data/external/fsd50k/*
+data/external/desed/*
+data/external/freesound/*
+data/external/musan/*
+data/external/openslr28/*
+data/external/esc50/*
+data/external/mit_ir/original/
+data/external/mit_ir/MIT_IR_Audio.zip
+
+# Keep the lightweight bathroom RIRs (8 small WAVs, ~280KB total) so Step 2 works out of the box
+!data/external/mit_ir/bathroom_irs/*.wav
+
+# Model weights & large binaries
+# (Ignore large intermediate models, keep the lightweight deployable INT8 model & C header)
+models/yamnet.h5
+models/yamnet_fall_detector.keras
+models/yamnet_fall_detector.h5
+models/fall_head.keras
+models/yamnet_fall_detector_float32.tflite
+models/yamnet_model_data.cc
+!models/yamnet_fall_detector_int8.tflite
+!models/yamnet_model_data.h
+!models/.gitkeep
+
+# Archives
+*.zip
+*.tar.gz
